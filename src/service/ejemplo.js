@@ -3,7 +3,7 @@ const { ejemplo } = require("../integration/soapclient");
 async function ejemplo1(girador) {
   let body = {
     NumberToWords:{
-        ubiNum:100
+        ubiNum:526
     }
     
   };

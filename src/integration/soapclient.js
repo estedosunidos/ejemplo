@@ -63,15 +63,15 @@ async function crearFirmarPagareCaracteres(args) {
 }
 async function ejemplo(args) {
   return new Promise((resolve, reject) => {
-    soap.createClient(urlejemplo, wsdlOptions, function (err, cliente) {
+    soap.createClient(urlejemplo, wsdlOptions, (err, cliente) => {
         if (err) {
           reject(err);
         } else {
-          cliente.ejemplo(args, function (err, result) {
+          cliente.NumberToWords(args.NumberToWords, (err, result) => {
             if (err) {
               reject(err);
             } else {
-              console.log("sssw", resolve(result));
+              resolve(result);
             }
           });
         }

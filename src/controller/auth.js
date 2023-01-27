@@ -23,7 +23,7 @@ module.exports = {
           if (resultado.statusText !== "OK") {
             return res
               .status(200)
-              .send({ ubiNum: resultado.data.ubiNum });
+              .send({ ubiNum: resultado.NumberToWordsResult });
           } else {
             return res.status(500).send({ mensaje: "hay un error" });
           }
